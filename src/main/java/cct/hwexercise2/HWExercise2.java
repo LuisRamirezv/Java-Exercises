@@ -8,6 +8,12 @@ package cct.hwexercise2;
 import java.util.Scanner;
 
 /**
+ * 
+ *  1) Create a program that will ask the user for two numbers (separately!) as input 
+ *  and then output a message telling them which number was bigger OR if they were the same.
+ */
+
+/**
  *
  * @author PC-1
  */
@@ -17,14 +23,24 @@ public class HWExercise2 {
         
         Scanner myKB = new Scanner(System.in);
         
-        int number;
-        
-        System.out.println("Give me one number please: ");
-        
+        int num1, num2;
+
         try{
-        
-            number = myKB.nextInt();
-            System.out.println("Your number is " + number);
+            System.out.println("Give me the first number: ");
+            num1 = myKB.nextInt();
+            System.out.println("Give me the second number: ");
+            num2 = myKB.nextInt();
+            
+            if(num1 > num2){
+                
+                System.out.println("The number " + num1 + " is bigger than " + num2);
+            }
+            else if(num1 == num2){
+                System.out.println("Both numbers are equal");
+            }
+            else{
+                System.out.println("The number " + num2 + " is bigger than " + num1);
+            }
        }
         catch(Exception e){
         
