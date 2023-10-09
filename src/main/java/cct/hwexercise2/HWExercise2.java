@@ -5,6 +5,8 @@
 
 package cct.hwexercise2;
 
+import java.util.Scanner;
+
 /**
  *
  * @author PC-1
@@ -12,6 +14,21 @@ package cct.hwexercise2;
 public class HWExercise2 {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        
+        Scanner myKB = new Scanner(System.in);
+        
+        int number;
+        
+        System.out.println("Give me one number please: ");
+        
+        try{
+        
+            number = myKB.nextInt();
+            System.out.println("Your number is " + number);
+       }
+        catch(Exception e){
+        
+            System.out.println("This is not number!!");
+        }
     }
 }
