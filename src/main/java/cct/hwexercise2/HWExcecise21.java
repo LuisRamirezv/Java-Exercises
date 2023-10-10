@@ -27,7 +27,7 @@ public class HWExcecise21 {
         
         
         try{
-            System.out.println("Write the first number: ");
+            System.out.println("Write the first number: " + myName);
             number1 = myKB.nextFloat();
             System.out.println("Write the second number: ");
             number2 = myKB.nextFloat();
