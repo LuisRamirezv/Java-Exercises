@@ -23,13 +23,14 @@ public class HWExcecise21 {
     
         Scanner myKB = new Scanner(System.in);
         
-        int number1, number2;
+        float number1, number2;
+        
         
         try{
             System.out.println("Write the first number: ");
-            number1 = myKB.nextInt();
+            number1 = myKB.nextFloat();
             System.out.println("Write the second number: ");
-            number2 = myKB.nextInt();
+            number2 = myKB.nextFloat();
             System.out.println("");
             
             if(number1 == 0 || number2 == 0){
@@ -38,6 +39,7 @@ public class HWExcecise21 {
                 
             }
             else{
+                
                 System.out.println("The new number is: " + number1/number2);
             }
         }
