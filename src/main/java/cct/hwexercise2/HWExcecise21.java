@@ -26,12 +26,20 @@ public class HWExcecise21 {
         int number1, number2;
         
         try{
-        
             System.out.println("Write the first number: ");
             number1 = myKB.nextInt();
             System.out.println("Write the second number: ");
             number2 = myKB.nextInt();
             System.out.println("");
+            
+            if(number1 == 0 || number2 == 0){
+                
+                System.out.println("Choose a number bigger than 0");
+                
+            }
+            else{
+                System.out.println("The new number is: " + number1/number2);
+            }
         }
         catch(Exception e){
             
